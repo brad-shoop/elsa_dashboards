@@ -1,0 +1,242 @@
+{
+   "charts" : [
+      {
+         "y" : "1",
+         "options" : {
+            "displayMode" : "regions",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty",
+            "colors" : [
+               "#DC3912",
+               "#EFE6DC",
+               "#109618"
+            ]
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_FTP groupby:dstip | whois | sum(country,)",
+               "label" : "class=BRO_FTP groupby:dstip | whois | sum(country,)"
+            }
+         ],
+         "x" : "0",
+         "type" : "GeoChart"
+      },
+      {
+         "y" : "2",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_FTP -command=command -command=string groupby:command",
+               "label" : "class=BRO_FTP groupby:command"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "4",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_FTP groupby:srcip",
+               "label" : "class=BRO_FTP groupby:srcip"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "1",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_FTP -arg=arg -arg=string groupby:arg",
+               "label" : "class=BRO_FTP groupby:arg"
+            }
+         ],
+         "x" : "1",
+         "type" : "Table"
+      },
+      {
+         "y" : "4",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_FTP groupby:dstip",
+               "label" : "class=BRO_FTP groupby:dstip"
+            }
+         ],
+         "x" : "1",
+         "type" : "Table"
+      }
+   ],
+   "auth_required" : "1",
+   "title" : "FTP",
+   "alias" : "ftp"
+}

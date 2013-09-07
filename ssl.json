@@ -1,0 +1,289 @@
+{
+   "charts" : [
+      {
+         "y" : "1",
+         "options" : {
+            "displayMode" : "regions",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty",
+            "colors" : [
+               "#DC3912",
+               "#EFE6DC",
+               "#109618"
+            ]
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SSL | whois | sum(country,) groupby:country",
+               "label" : "class=BRO_SSL | whois | sum(country,)"
+            }
+         ],
+         "x" : "0",
+         "type" : "GeoChart"
+      },
+      {
+         "y" : "2",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 SSL class=BRO_NOTICE groupby:notice_msg",
+               "label" : "SSL class=BRO_NOTICE groupby:notice_msg"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "3",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "pageSize" : 10,
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SSL groupby:subject",
+               "label" : "class=BRO_SSL groupby:subject"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "4",
+         "options" : {
+            "width" : 500,
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SSL groupby:dstport",
+               "label" : "class=BRO_SSL groupby:dstport"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "1",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SSL groupby:hostname",
+               "label" : "class=BRO_SSL groupby:hostname"
+            }
+         ],
+         "x" : "1",
+         "type" : "Table"
+      },
+      {
+         "y" : "4",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SSL groupby:expiration",
+               "label" : "class=BRO_SSL groupby:expiration"
+            }
+         ],
+         "x" : "1",
+         "type" : "Table"
+      }
+   ],
+   "auth_required" : "1",
+   "title" : "SSL",
+   "alias" : "ssl"
+}

@@ -1,0 +1,376 @@
+{
+   "charts" : [
+      {
+         "y" : "1",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SOFTWARE -name=\"string|string\" groupby:name",
+               "label" : "class=BRO_SOFTWARE groupby:name"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "2",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SOFTWARE groupby:type",
+               "label" : "class=BRO_SOFTWARE groupby:type"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "3",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_NOTICE +notice_type=\"HTTP::Malware_Hash_Registry_Match\" groupby:srcip",
+               "label" : "class=BRO_NOTICE +notice_type=\"HTTP::Malware_Hash_Registry_Match\" groupby:srcip"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "4",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 +notice_type=\"HTTP::Incorrect_File_Type\" groupby:notice_msg",
+               "label" : "class=BRO_NOTICE +notice_type=\"HTTP::Incorrect_File_Type\"  groupby:notice_msg"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "6",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_NOTICE SSH groupby:notice_msg",
+               "label" : "class=BRO_NOTICE SSH groupby:notice_msg"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "7",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 Signatures class=BRO_NOTICE groupby:notice_msg",
+               "label" : "host=127.0.0.1 Signatures class=BRO_NOTICE groupby:notice_msg"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "2",
+         "options" : {
+            "width" : 500,
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_KNOWN_HOSTS groupby:srcip",
+               "label" : "class=BRO_KNOWN_HOSTS groupby:srcip"
+            }
+         ],
+         "x" : "1",
+         "type" : "Table"
+      },
+      {
+         "y" : "3",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_NOTICE +notice_type=\"SSH::Password_Guessing\" +srcip=\"0.0.0.0\" groupby:notice_msg",
+               "label" : "class=BRO_NOTICE +notice_type=\"SSH::Password_Guessing\" +srcip=\"0.0.0.0\" groupby:notice_msg"
+            }
+         ],
+         "x" : "1",
+         "type" : "Table"
+      }
+   ],
+   "auth_required" : "1",
+   "title" : "Host Hunting",
+   "alias" : "host_hunting"
+}

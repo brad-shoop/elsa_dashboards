@@ -1,0 +1,340 @@
+{
+   "charts" : [
+      {
+         "y" : "1",
+         "options" : {
+            "width" : 500,
+            "displayMode" : "markers",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty",
+            "colors" : [
+               "#DC3912",
+               "#EFE6DC",
+               "#109618"
+            ]
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SMTP | whois | sum(country,) groupby:country",
+               "label" : "class=BRO_SMTP | whois | sum(country,)"
+            }
+         ],
+         "x" : "0",
+         "type" : "GeoChart"
+      },
+      {
+         "y" : "2",
+         "options" : {
+            "width" : 500,
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SMTP groupby:server",
+               "label" : "class=BRO_SMTP groupby:server"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "5",
+         "options" : {
+            "width" : 500,
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SMTP_ENTITIES groupby:mime_type",
+               "label" : "class=BRO_SMTP_ENTITIES groupby:mime_type"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "6",
+         "options" : {
+            "width" : 1000,
+            "page" : "enable",
+            "title" : null,
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SMTP groupby:subject",
+               "label" : "class=BRO_SMTP groupby:subject"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "1",
+         "options" : {
+            "width" : 500,
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SMTP groupby:srcip",
+               "label" : "class=BRO_SMTP groupby:srcip"
+            }
+         ],
+         "x" : "1",
+         "type" : "Table"
+      },
+      {
+         "y" : "2",
+         "options" : {
+            "width" : 500,
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SMTP groupby:last_reply",
+               "label" : "class=BRO_SMTP groupby:last_reply"
+            }
+         ],
+         "x" : "1",
+         "type" : "Table"
+      },
+      {
+         "y" : "5",
+         "options" : {
+            "width" : 500,
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SMTP_ENTITIES groupby:filename",
+               "label" : "class=BRO_SMTP_ENTITIES groupby:filename"
+            }
+         ],
+         "x" : "1",
+         "type" : "Table"
+      }
+   ],
+   "auth_required" : "1",
+   "title" : "SMTP",
+   "alias" : "smtp"
+}

@@ -1,0 +1,283 @@
+{
+   "charts" : [
+      {
+         "y" : "1",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 notice_type=\"SSH::Password_Guessing\" class=BRO_NOTICE groupby:notice_msg",
+               "label" : "notice_type=\"SSH::Password_Guessing\" class=BRO_NOTICE groupby:notice_msg"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "2",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 SSH groupby:notice_type",
+               "label" : "SSH groupby:notice_type"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "3",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SSH -client=enum -client=direction groupby:client",
+               "label" : "class=BRO_SSH groupby:client"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "4",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_SSH -client=enum -client=string groupby:server",
+               "label" : "class=BRO_SSH groupby:server"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "1",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 +notice_type=\"SSH::Login\" class=BRO_NOTICE groupby:dstip",
+               "label" : "notice_type=\"SSH::Login\" class=BRO_NOTICE groupby:dstip"
+            }
+         ],
+         "x" : "1",
+         "type" : "Table"
+      },
+      {
+         "y" : "2",
+         "options" : {
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 +notice_type=\"SSH::Watched_Country_Login\" groupby:notice_msg",
+               "label" : "notice_type=\"SSH::Watched_Country_Login\" groupby:notice_msg"
+            }
+         ],
+         "x" : "1",
+         "type" : "Table"
+      }
+   ],
+   "auth_required" : "1",
+   "title" : "SSH",
+   "alias" : "ssh"
+}

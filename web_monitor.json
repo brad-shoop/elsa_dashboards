@@ -1,0 +1,435 @@
+{
+   "charts" : [
+      {
+         "y" : "1",
+         "options" : {
+            "width" : 500,
+            "legend" : "right",
+            "hAxis" : {
+               "viewWindowMode" : null,
+               "minValue" : null,
+               "viewWindow" : null,
+               "maxValue" : null,
+               "useFormatFromData" : true,
+               "title" : "Destination Ports"
+            },
+            "vAxes" : [
+               {
+                  "viewWindowMode" : "pretty",
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "viewWindowMode" : "pretty",
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty",
+            "isStacked" : false,
+            "title" : "Activity by Destination Port",
+            "backgroundColor" : {
+               "fill" : "#ffffff"
+            },
+            "animation" : {
+               "duration" : 500
+            }
+         },
+         "queries" : [
+            {
+               "query" : "get post put head class=BRO_HTTP groupby:dstport\n",
+               "label" : "class=BRO_HTTP"
+            }
+         ],
+         "x" : "0",
+         "type" : "ColumnChart"
+      },
+      {
+         "y" : "2",
+         "options" : {
+            "width" : "333.333333333333",
+            "is3D" : true,
+            "legend" : "right",
+            "hAxis" : {
+               "viewWindowMode" : "pretty",
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "viewWindowMode" : "pretty",
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "viewWindowMode" : "pretty",
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty",
+            "colors" : [
+               "#3366CC",
+               "#DC3912",
+               "#FF9900",
+               "#109618",
+               "#990099",
+               "#0099C6",
+               "#DD4477",
+               "#66AA00",
+               "#B82E2E",
+               "#316395",
+               "#994499",
+               "#22AA99",
+               "#AAAA11",
+               "#6633CC",
+               "#E67300",
+               "#8B0707",
+               "#651067",
+               "#329262",
+               "#5574A6",
+               "#3B3EAC",
+               "#B77322",
+               "#16D620",
+               "#B91383",
+               "#F4359E",
+               "#9C5935",
+               "#A9C413",
+               "#2A778D",
+               "#668D1C",
+               "#BEA413",
+               "#0C5922",
+               "#743411"
+            ],
+            "pieHole" : 0,
+            "title" : "Source IPs"
+         },
+         "queries" : [
+            {
+               "query" : "get post put head class=BRO_HTTP groupby:srcip",
+               "label" : "Sources"
+            }
+         ],
+         "x" : "0",
+         "type" : "PieChart"
+      },
+      {
+         "y" : "3",
+         "options" : {
+            "title" : null
+         },
+         "queries" : [
+            {
+               "query" : "get post put head class=BRO_HTTP groupby:minute",
+               "label" : "get post put head class=BRO_HTTP"
+            }
+         ],
+         "x" : "0",
+         "type" : "ColumnChart"
+      },
+      {
+         "y" : "4",
+         "options" : {
+            "width" : 500,
+            "sortColumn" : null,
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindowMode" : "pretty",
+               "maxValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "viewWindowMode" : "pretty",
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "viewWindowMode" : "pretty",
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "pageSize" : 20,
+            "booleanRole" : "certainty",
+            "showRowNumber" : false,
+            "alternatingRowStyle" : true
+         },
+         "queries" : [
+            {
+               "query" : "get post put head class=BRO_HTTP groupby:BRO_HTTP.site",
+               "label" : "Top Sites"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "1",
+         "options" : {
+            "width" : 500,
+            "displayMode" : "regions",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "logScale" : false,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "logScale" : false,
+                  "useFormatFromData" : true
+               }
+            ],
+            "backgroundColor" : "#ffffff",
+            "booleanRole" : "certainty",
+            "colors" : [
+               "#DC3912",
+               "#EFE6DC",
+               "#109618"
+            ]
+         },
+         "queries" : [
+            {
+               "query" : "get post put head class=BRO_HTTP groupby:BRO_HTTP.dstip | geoip",
+               "label" : "GeoIP Map"
+            }
+         ],
+         "x" : "1",
+         "type" : "GeoChart"
+      },
+      {
+         "y" : "2",
+         "options" : {
+            "width" : "333.333333333333",
+            "is3D" : true,
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindowMode" : "pretty",
+               "maxValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "viewWindowMode" : "pretty",
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "viewWindowMode" : "pretty",
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty",
+            "colors" : [
+               "#3366CC",
+               "#DC3912",
+               "#FF9900",
+               "#109618",
+               "#990099",
+               "#0099C6",
+               "#DD4477",
+               "#66AA00",
+               "#B82E2E",
+               "#316395",
+               "#994499",
+               "#22AA99",
+               "#AAAA11",
+               "#6633CC",
+               "#E67300",
+               "#8B0707",
+               "#651067",
+               "#329262",
+               "#5574A6",
+               "#3B3EAC",
+               "#B77322",
+               "#16D620",
+               "#B91383",
+               "#F4359E",
+               "#9C5935",
+               "#A9C413",
+               "#2A778D",
+               "#668D1C",
+               "#BEA413",
+               "#0C5922",
+               "#743411"
+            ],
+            "pieHole" : 0,
+            "title" : "Destination IPs"
+         },
+         "queries" : [
+            {
+               "query" : "get post put head class=BRO_HTTP groupby:BRO_HTTP.dstip",
+               "label" : "Destinations"
+            }
+         ],
+         "x" : "1",
+         "type" : "PieChart"
+      },
+      {
+         "y" : "2",
+         "options" : {
+            "width" : "333.333333333333",
+            "is3D" : false,
+            "legend" : "right",
+            "hAxis" : {
+               "viewWindowMode" : "pretty",
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "viewWindowMode" : "pretty",
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "viewWindowMode" : "pretty",
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty",
+            "colors" : [
+               "#3366CC",
+               "#DC3912",
+               "#FF9900",
+               "#109618",
+               "#990099",
+               "#0099C6",
+               "#DD4477",
+               "#66AA00",
+               "#B82E2E",
+               "#316395",
+               "#994499",
+               "#22AA99",
+               "#AAAA11",
+               "#6633CC",
+               "#E67300",
+               "#8B0707",
+               "#651067",
+               "#329262",
+               "#5574A6",
+               "#3B3EAC",
+               "#B77322",
+               "#16D620",
+               "#B91383",
+               "#F4359E",
+               "#9C5935",
+               "#A9C413",
+               "#2A778D",
+               "#668D1C",
+               "#BEA413",
+               "#0C5922",
+               "#743411"
+            ],
+            "pieHole" : "0.5",
+            "title" : "Method"
+         },
+         "queries" : [
+            {
+               "query" : "get post put head class=BRO_HTTP groupby:method",
+               "label" : "class=BRO_HTTP"
+            }
+         ],
+         "x" : "2",
+         "type" : "PieChart"
+      }
+   ],
+   "auth_required" : "1",
+   "title" : "Web Monitor",
+   "alias" : "web_monitor"
+}

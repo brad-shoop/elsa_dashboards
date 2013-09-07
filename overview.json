@@ -1,0 +1,446 @@
+{
+   "charts" : [
+      {
+         "y" : "0",
+         "options" : {
+            "width" : 500,
+            "displayMode" : "markers",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty",
+            "colors" : [
+               "#DC3912",
+               "#EFE6DC",
+               "#109618"
+            ]
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=\"BRO_NOTICE\" OR class=\"SNORT\" groupby:dstip | geoip",
+               "label" : "Snort Event/Bro Notice"
+            }
+         ],
+         "x" : "0",
+         "type" : "GeoChart"
+      },
+      {
+         "y" : "1",
+         "options" : {
+            "width" : 500,
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 +class=\"BRO_NOTICE\" -notice_type=\"proto\" -notice_type=\"enum\" groupby:notice_type",
+               "label" : "Bro Notices by Type"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "2",
+         "options" : {
+            "width" : 500,
+            "page" : "enable",
+            "title" : null,
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=SNORT groupby:sig_classification",
+               "label" : "Snort/Suricata by Classification"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "3",
+         "options" : {
+            "width" : 1000,
+            "domainAxis" : {
+               "direction" : 1
+            },
+            "legend" : "right",
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true,
+                  "logScale" : false
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true,
+                  "logScale" : false
+               }
+            ],
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindowMode" : null,
+               "maxValue" : null,
+               "viewWindow" : null,
+               "useFormatFromData" : true
+            },
+            "booleanRole" : "certainty",
+            "isStacked" : true,
+            "legendTextStyle" : {
+               "color" : "#222",
+               "fontSize" : "12"
+            },
+            "title" : null,
+            "animation" : {
+               "duration" : 500
+            }
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=bro_notice",
+               "label" : "bro_notice"
+            },
+            {
+               "query" : "host=127.0.0.1 class=bro_conn",
+               "label" : "bro_conn"
+            },
+            {
+               "query" : "host=127.0.0.1 class=bro_http",
+               "label" : "bro_http"
+            },
+            {
+               "query" : "host=127.0.0.1 class=bro_dns",
+               "label" : "bro_dns"
+            },
+            {
+               "query" : "host=127.0.0.1 class=bro_ssl",
+               "label" : "bro_ssl"
+            },
+            {
+               "query" : "host=127.0.0.1 class=bro_weird",
+               "label" : "bro_weird"
+            },
+            {
+               "query" : "host=127.0.0.1 class=bro_syslog",
+               "label" : "bro_syslog"
+            },
+            {
+               "query" : "host=127.0.0.1 class=bro_ssh",
+               "label" : "bro_ssh"
+            },
+            {
+               "query" : "host=127.0.0.1 class=bro_smtp",
+               "label" : "bro_smtp"
+            },
+            {
+               "query" : "host=127.0.0.1 class=bro_smtp_entities",
+               "label" : "bro_smtp_entities"
+            },
+            {
+               "query" : "host=127.0.0.1 class=bro_ftp",
+               "label" : "bro_ftp"
+            },
+            {
+               "query" : "host=127.0.0.1 class=bro_tunnel",
+               "label" : "bro_tunnel"
+            }
+         ],
+         "x" : "0",
+         "type" : "ColumnChart"
+      },
+      {
+         "y" : "4",
+         "options" : {
+            "width" : 1000,
+            "page" : "enable",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=BRO_NOTICE -notice_msg=\"note\" -notice_msg=\"enum\" groupby:notice_msg",
+               "label" : "Bro Notice by Message"
+            }
+         ],
+         "x" : "0",
+         "type" : "Table"
+      },
+      {
+         "y" : "0",
+         "options" : {
+            "width" : 500,
+            "page" : "enable",
+            "legend" : "right",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "logScale" : false,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "logScale" : false,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 groupby:class",
+               "label" : "Events by Class"
+            }
+         ],
+         "x" : "1",
+         "type" : "Table"
+      },
+      {
+         "y" : "1",
+         "options" : {
+            "width" : 500,
+            "legend" : "right",
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true,
+                  "logScale" : false
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true,
+                  "logScale" : false
+               }
+            ],
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindowMode" : null,
+               "maxValue" : null,
+               "viewWindow" : null,
+               "useFormatFromData" : true
+            },
+            "booleanRole" : "certainty",
+            "isStacked" : true,
+            "title" : null,
+            "animation" : {
+               "duration" : 500
+            }
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=SNORT",
+               "label" : "Snort Events"
+            },
+            {
+               "query" : "host=127.0.0.1 class=BRO_NOTICE",
+               "label" : "Bro Notices"
+            }
+         ],
+         "x" : "1",
+         "type" : "ColumnChart"
+      },
+      {
+         "y" : "2",
+         "options" : {
+            "width" : 500,
+            "page" : "enable",
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty"
+         },
+         "queries" : [
+            {
+               "query" : "host=127.0.0.1 class=SNORT groupby:SNORT.sig_msg",
+               "label" : "Snort by Message"
+            }
+         ],
+         "x" : "1",
+         "type" : "Table"
+      }
+   ],
+   "auth_required" : "1",
+   "title" : "Overview",
+   "alias" : "overview"
+}
